@@ -1,0 +1,681 @@
+/******************************************************************
+Stylesheet: Base Mobile Stylesheet
+******************************************************************/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+header, body, footer{
+	font-family: $open-sans;
+	line-height: 1;
+}
+header{
+	background-color: $NHLBlack;
+	color: $NHLWhite;
+	padding-top: .25em; 
+}
+body{
+	margin: 0;
+}
+section{
+	margin: 0.25em .75em;
+	.section-title{
+		color: $black;
+		font-size: 4vw;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+article{}
+
+.stripes{
+	background-color: $NHLSilver;
+	border-bottom-color: $NHLBlack;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-top-color: $NHLBlack;
+	border-top-style: solid;
+	border-top-width: 5px;
+    height: 20px;
+}
+
+.stripes-top{
+	border-bottom-color: $NHLBlack;
+	border-bottom-style: solid;
+	border-bottom-width: 15px;
+	border-top-color: $NHLSilver;
+	border-top-style: solid;
+	border-top-width: 25px;
+}
+.stripes-bottom{
+	border-bottom-color: $NHLSilver;
+	border-bottom-style: solid;
+	border-bottom-width: 25px;
+	border-top-color: $NHLBlack;
+	border-top-style: solid;
+	border-top-width: 15px;
+	margin-top: 2em;
+}
+
+
+/********************
+PLAYER BANNER
+********************/
+header{
+	.player-banner-bg{
+		margin: 0 auto;
+	    display: block;
+	   	width: 100%;
+	}
+
+	.player-banner{
+		margin: 0 .5em;
+		.player-is-rookie{
+			height: auto;
+		    position: absolute;
+		    top: 0;
+		    width: 15%;
+		}
+
+		.player-headshot{
+			border-radius: 2em 2em 0 0;
+			height: auto;
+			margin-top: -10%;
+			width: 20%;
+		}
+
+	}	
+}
+
+
+/****************
+PLAYER INFO
+*****************/
+.player-info{
+	background-color: $NHLBlack;
+	margin: 0;
+	padding: 0 0.5em 1em;
+	position: relative;
+
+	.player-top-info{
+
+		.player-name-team{	
+			display: inline-block;
+			text-transform: uppercase;
+			width: 65%;
+			.player-name{
+				color: $white;
+				font-size: 3.25vw;
+				font-weight: 800;
+				margin: 0 auto;				
+				text-shadow: 1px 1px $black, 3px 3px $NHLSilverLT;
+			}	
+			.team-name{				
+				font-size: 1.75vw;
+				font-weight: 300;
+				margin: 0.25em auto 0;
+				a{
+					color: $white;					
+					text-decoration: none;
+				}
+			}
+		}
+
+		.player-physical{
+			display: inline-block;
+			margin-top: 1em;
+			width: 65%;
+			.player-height,
+			.player-weight,	
+			.player-hand{
+				color: $white;
+				display: inline-block;
+				font-size: 1.75vw;
+				margin: 0 auto;
+				width: 32.5%;
+			}				
+		}
+
+		.player-num-pos{
+			float: right;
+			margin-top: -10vw;
+			text-align: right;
+			width: 33%;
+
+			.player-number{
+				color: $white;
+				font-size: 15vw;
+				font-weight: 800;
+				margin: 0;
+			}
+			.player-position{
+				color: $white;
+			    font-size: 2.25vw;
+			    font-weight: 300;
+			    margin: -.25em 0 0 0;
+			    text-transform: uppercase;
+			}
+		}
+
+
+	}
+
+	.player-bottom-info{
+		display: inline-block;
+		margin-top: 1em;
+		width: 65%;
+
+		.player-birthdate,
+		.player-age,
+		.player-birthplace{
+			color: $white;
+			display: inline-block;
+			font-size: 1.75vw;
+			margin: 0 auto;
+			width: 32.5%;
+			.player-info-label{
+				color: $black;
+				font-size: 1.25vw;
+				font-weight: 300;
+				margin: 0 auto;
+			}
+		}
+
+		.player-birthdate{
+			.player-dob{
+				margin: 0 auto;
+			}
+		}
+		.player-age{
+			.player-years-old{
+				margin: 0 auto;	
+			}
+		}
+		.player-birthplace{
+			.player-birthplace-city{
+				margin: 0 auto;
+			}
+		}
+		.player-active{}
+		.player-rookie{}
+	}
+}
+
+/************************
+PLAYER STATS
+*************************/
+.player-stats{
+//Career Totals
+	.career-regular-season-stats{
+		display: block;
+		width: 100%;
+		.career-stat-label-row{	
+			display: table-row-group;
+			.career-stat-holder{
+				display: table-cell;
+				padding: 0 0.5em;
+				p{
+					text-align: center;
+				}
+				.career-stat-label{
+					color: $NHLSilver;
+					font-size: 1.5vw;
+					font-weight: 600;
+					margin: 0;
+				}
+				.career-stat{
+					color: $black;
+					font-size: 2.5vw;
+					font-weight: 800;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+//Season Splits
+	.player-stats-labels{
+		display: table;
+		width: 100%;
+		.player-stats-label{
+			display: table-cell;
+			font-size: 2vw;
+		}	
+		#season-id-label, #season-league-label, #season-games-label, #season-goals-label, #season-assists-label, #season-points-label, #season-pim-label{
+			width: 10%;
+		}
+		#season-team-label{
+			width: 25%;
+		}
+		#season-more-label{
+			width: 5%;
+		}
+
+	}
+
+	.player-season{
+		display: block;
+		font-size: 2vw;
+		width: 100%;
+		.player-season-top-stats{
+			display: table;
+			width: 100%;
+
+			.season-id, .season-league, .season-games, .season-goals, .season-assists, .season-points, .season-pim{
+				width: 10%;
+			}
+			.season-team{
+				width: 25%;
+				a{
+					color: $NHLSilver;
+					text-decoration: none;
+					&:hover{
+						color: darken($NHLSilver, 15);
+					}
+				}
+			}
+			.season-see-more{
+				padding-right: 15px;
+				text-align: right; 
+				width: 5%;
+			}
+		}
+			&:nth-child(even){
+				background-color: $NHLSilverLT;
+				//border-top-color: $NHLSilver;
+				//border-top: 10px solid;
+				//border-bottom-color: $NHLSilver;
+				//border-bottom: 10px solid;
+				color: $white;
+			}
+			
+			.player-season-record{
+				display: table-cell;
+				font-weight: 800;
+				padding-bottom: 15px;
+		  		padding-top: 15px;
+			}
+
+
+	}
+
+	.player-season-bottom-stats{
+		display: none;
+		padding-left: 10px;
+    	padding-right: 10px;
+			.player-seasons-expanded-title{
+				color: $NHLSilver;
+				display: block;
+				font-size: 2.25vw;
+				font-weight: 800;
+				margin: 1vw auto;
+				text-align: center;
+				text-transform: uppercase;	
+				width: 100%;
+				h5{
+					margin: 0;
+				}
+			}
+			.player-seasons-expand{
+			display: table;
+			margin: 2vw auto;
+			text-align: center;
+			width: 100%;
+
+				.player-season-record-stat{
+					display: table-cell;
+					span{
+						font-weight: 800;
+					}
+				}
+
+				
+				.player-seasons-expand-row{
+					display: table-row-group;
+					.player-season-record-stat{
+						display: table-cell;
+					}
+				}
+			
+
+				&:last-child{
+					padding-bottom: 2vw;
+				}
+
+			}
+
+	}
+
+}
+/***********************
+TABLE
+***********************/
+.center-stats{
+	text-align: center;
+}
+.left-stats{
+	text-align: left;
+}
+.right-stats{
+	text-align: right;
+}
+.stats-table{
+	display: table;
+	width: 100%;
+	.stats-row-head{
+		display: table-header-group;
+	}
+	.stats-row-stripes{
+		display: table-row;
+			&:nth-child(odd){
+				background-color: $NHLSilverLT;
+				color: $NHLBlack;
+			}
+		.stats-record{
+			display: table-cell;
+		}
+	}
+
+	.stats-row{
+		display: table-row;
+		.stats-record{
+			display: table-cell;
+			width: 10%;
+		}
+	}
+
+
+}
+
+.season-stats-upper, .stats-labels{
+		display: table;
+		width: 100%;
+		.season-stats-total, .stats-label{
+			display: table-cell;
+			font-size: 3vw;
+			width: 16%;
+		}
+		.season-stats-total{
+			a{
+				color: $NHLSilver;
+				margin: 0;
+				text-decoration: none;
+				&:hover{
+					color: darken($NHLSilver, 15);
+				}
+				h3{
+					margin-bottom: 15px;
+					margin-top: 15px;
+				}
+			}
+			&.center-stats{
+				font-weight: 800;
+			}
+		}
+		.stats-label{
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+}
+
+.see-more{
+  color: $NHLSilver;
+  content: "";
+  text-decoration: none;
+  &:before{
+  	content: "+";
+  }
+}
+
+/**********************
+STANDINGS
+*********************/
+.standings{
+	.division{
+		display: inline-block;
+		padding: 0 2.5%;
+		width: 49%;
+		.division-title{
+			font-size: 2.25vw;
+			font-weight: 800;
+			margin: 0.25vw 0;
+			text-align: center;
+		}
+		.division-standings{
+				.team-records-header{
+					display: table-header-group;
+					.team-records-header-label{
+						display: table-cell;
+					}
+				}
+			.team-records{
+
+
+				.team-record{
+					font-weight: 800; 
+				}
+				.team-name{
+					font-weight: 600;
+					padding: .25em; 
+					a{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+/***********************
+TEAM STYLES
+***********************/
+.team{
+	background-color: $NHLBlack;
+	display: block;
+	width: 100%;
+	.single-team-logo{
+		display: inline-block;
+		float: right;
+		width: 25%;
+	}
+	.team-info{
+		color: $NHLWhite;
+		display: inline-block;
+		padding-bottom: .5em;
+		width: 70%;
+		.team-name{
+			color: $NHLSilverLT;
+			font-size: 6vw;
+			margin: 0 auto;
+			text-shadow: 1px 1px $black, 3px 3px $NHLSilverLT;
+    		text-transform: uppercase;
+		}
+		.team-info-bio{
+			font-size: 2vw;
+			margin: 0.25em auto;
+		}
+	}
+}
+
+
+.season{
+	display: block;
+	width: 100%;
+	.season-title{
+		a{
+			text-decoration: none;
+		}
+	}
+	.season-stats{
+		width: 100%;
+	}
+
+	.season-stats-lower{
+		display: none;
+		.stats-row{
+			height: 2vw;
+		}
+		.stats-record{
+			font-size: 1.5vw;
+			padding-left: 1.5vw;
+			span.stats-record-stat{
+				color: $black;
+				float: right;
+				font-weight: 800;
+			}
+		}
+	}
+
+	&:nth-child(even){
+		background-color: $NHLSilverLT;
+		border-top-color: $NHLSilver;
+		border-top: 1vw solid;
+		border-bottom-color: $NHLSilver;
+    	border-bottom: 1vw solid;
+    	color: $white;
+	}
+}
+
+
+//Roster Headshots
+.team-headshots{
+	display: block;
+	width: 100%;
+	.players-table{
+		display: table;
+		width: 100%;
+		.forwards-row, .defense-row{
+			display: table-row;
+			.player{
+				display: table-cell;
+				width: 16%;
+			}
+		}
+		.table-row-spacing{
+			display: table-row;
+			height: 3vw;
+		}
+	}
+	.player{
+
+	    text-decoration: none;
+		.player-headshot{
+
+			img{    
+    			display: block;
+    			height: 100%;
+    			margin: 0 auto;
+				max-width: 168px;
+    			max-height: 168px;
+    			width: 100%;
+			}
+		}
+		.player-headshot-info{
+			text-align: center;
+			.player-firstname{
+				color: $black;
+				font-size: 1.5vw;
+				margin: 0;
+			}
+			.player-lastname{
+				color: $black;
+				font-size: 2.25vw;
+				margin: 0;
+				text-transform: uppercase;
+			}
+		}	
+	}
+}
+
+
+.team-leaders-stats{
+	display: block;
+	width: 100%;
+	.player-stats-table{
+		display: table;
+		width: 100%;
+		.player-stats-table-header{
+			display: table-header-group;
+			.player-stat-header{
+				display: table-cell;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+		}
+		.player-stat-row{
+			display: table-row;
+				&:nth-child(even){
+					background-color: $NHLSilverLT;
+			    	color: $black;
+				}
+			.player-stat{
+				display: table-cell;
+				font-weight: 600;
+    			font-size: 1.4vw;
+    			padding-bottom: .5vw;
+    			padding-top: .5vw;
+			}
+		}
+	}
+}
+
+/************************
+HOMEPAGE
+************************/
+.logo-links{
+text-decoration: none;
+
+.team-logo {
+    background-color: $black;
+    position: relative;
+    margin: .5em;
+    height: 150px;
+    width: 150px;
+    border: 5px solid #000;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+
+    &:after {
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      border-radius: 500px;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 150px;
+      height: 150px;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+/************************
+FOOTER
+************************/
+footer{
+	background-color: $NHLBlack;
+    padding-bottom: .25em;
+	padding-top: .25em;
+	.copyright{
+		color: $NHLWhite;
+	    font-size: 1vw;
+	    font-weight: 300;
+	    margin: .25em auto;
+		text-align: center;
+		 &:nth-child(1){
+		 	margin-top: .75em;
+		 }
+	}
+}

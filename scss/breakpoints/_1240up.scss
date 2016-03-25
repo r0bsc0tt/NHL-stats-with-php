@@ -1,0 +1,69 @@
+/******************************************************************
+Stylesheet: Super Large Monitor Stylesheet
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+header, body, footer{
+}
+
+
+
+/********************
+PLAYER BANNER
+********************/
+.player-banner{
+	.player-header-bg{}
+	.player-is-rookie{}
+
+}
+
+.player-headshot{
+	img{}
+}
+
+
+/****************
+PLAYER INFO
+*****************/
+.player-info{
+
+	.player-top-info{
+
+		.player-name-team{	
+			.player-name{}	
+			.team-name{}
+		}
+
+		.player-physical{	
+			.player-height{}
+			.player-weight{}	
+			.player-hand{}				
+		}
+
+		.player-num-pos{
+			.player-number{}
+			.player-position{}
+		}
+
+
+	}
+
+	.player-bottom-info{
+
+		.player-info-label{}
+		.player-birthdate{}
+		.player-age{}
+		.player-birthplace{
+			.player-birthplace-city{}
+		}
+
+		.player-active{}
+		.player-rookie{}
+	}
+}
+
+footer{
+	.copyright{}
+}

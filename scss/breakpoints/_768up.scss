@@ -1,0 +1,94 @@
+/******************************************************************
+Stylesheet: Tablet & Small Desktop Stylesheet
+******************************************************************/
+
+/********************
+PLAYER BANNER
+********************/
+header{
+	.player-banner-bg{
+	}
+
+	.player-banner{
+		.player-is-rookie{
+		}
+
+		.player-headshot{
+		}
+
+	}	
+}
+
+/****************
+PLAYER INFO
+*****************/
+.player-info{
+	.player-top-info{
+		.player-name-team{	
+			.player-name{
+			}	
+			.team-name{
+				a{
+				}
+			}
+		}
+
+		.player-physical{
+			.player-height,
+			.player-weight,	
+			.player-hand{
+			}				
+		}
+
+		.player-num-pos{
+			.player-number{
+			}
+			.player-position{
+			}
+		}
+
+
+	}
+
+	.player-bottom-info{
+		.player-birthdate,
+		.player-age,
+		.player-birthplace{
+			.player-info-label{
+			}
+		}
+
+		.player-birthdate{
+			.player-dob{
+			}
+		}
+		.player-age{
+			.player-years-old{
+			}
+		}
+		.player-birthplace{
+			.player-birthplace-city{
+			}
+		}
+		.player-active{}
+		.player-rookie{}
+	}
+}
+
+.player-stats{
+	.career-regular-season-stats{
+		.career-stat-holder{
+			width:13.5%; 
+			p{
+			}
+			.career-stat-label{}
+			.career-stat{
+			}
+		}
+	}
+}
+
+footer{
+	.copyright{
+	}
+}
