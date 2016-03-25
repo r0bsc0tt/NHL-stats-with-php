@@ -1,0 +1,35 @@
+<?php
+$colors = array (
+		'Anaheim Ducks' => array ('colorOne' => 'F57D31', 'colorTwo' => 'B6985A', 'colorThree' => 'FFFFFF', 'colorFour' => '000000',),
+		'Arizona Coyotes' => array ('colorOne' => '98012E', 'colorTwo' => 'EEE3C7', 'colorThree' => 'FFFFFF', 'colorFour' => '000000',),
+		'Boston Bruins' => array ('colorOne' => 'FDB930', 'colorTwo' => 'FFFFFF', 'colorThree' => '000000',),
+		'Buffalo Sabres' => array ('colorOne' => '002D62', 'colorTwo' => 'FDB930', 'colorThree' => 'FFFFFF', 'colorFour' => 'A7A9AC',),
+		'Calgary Flames' => array ('colorOne' => 'CB0D0D', 'colorTwo' => 'FDBF12', 'colorThree' => 'FFFFFF', 'colorFour' => '000000',),
+		'Carolina Hurricanes' => array ('colorOne' => 'E51A38', 'colorTwo' => 'FFFFFF', 'colorThree' => '000000',),
+		'Chicago Blackhawks' => array ('colorOne' => 'C60C30', 'colorTwo' => 'FFFFFF', 'colorThree' => '000000',),
+		'Colorado Avalanche' => array ('colorOne' => '822433', 'colorTwo' => '165788', 'colorThree' => '85888B', 'colorFour' => '000000',),
+		'Columbus Blue Jackets' => array ('colorOne' => '002147', 'colorTwo' => 'C60C30', 'colorThree' => 'A5ACAF', 'colorFour' => 'FFFFFF',),
+		'Dallas Stars' => array ('colorOne' => '016F4A', 'colorTwo' => 'A7A8AC', 'colorThree' => '000000', 'colorFour' => 'FFFFFF',),
+		'Detroit Red Wings' => array ('colorOne' => 'E51837', 'colorTwo' => 'FFFFFF',),
+		'Edmonton Oilers' => array ('colorOne' => '013E7F', 'colorTwo' => 'EB6E1E', 'colorThree' => 'FFFFFF',),
+		'Florida Panthers' => array ('colorOne' => 'e51a38', 'colorTwo' => '002D62', 'colorThree' => 'F1B310', 'colorFour' => 'FFFFFF',),
+		'Los Angeles Kings' => array ('colorOne' => '000000', 'colorTwo' => 'B2B7BB', 'colorThree' => 'FFFFFF',),
+		'Minnesota Wild' => array ('colorOne' => 'C51230', 'colorTwo' => '004F30', 'colorThree' => 'F1B310', 'colorFour' => 'EEE3C7', 'colorFive' => 'FFFFFF',),
+		'Montréal Canadiens' => array ('colorOne' => 'C51230', 'colorTwo' => '083A81', 'colorThree' => 'FFFFFF',),
+		'Nashville Predators' => array ('colorOne' => 'FDBB30', 'colorTwo' => '002D62', 'colorThree' => 'FFFFFF',),
+		'New Jersey Devils' => array ('colorOne' => 'E03A3E', 'colorTwo' => '000000', 'colorThree' => 'FFFFFF',),
+		'New York Islanders' => array ('colorOne' => 'F57D31', 'colorTwo' => '00529B', 'colorThree' => 'FFFFFF',),
+		'New York Rangers' => array ('colorOne' => 'E51837', 'colorTwo' => '0161AB', 'colorThree' => 'FFFFFF',),
+		'Ottawa Senators' => array ('colorOne' => 'E51837', 'colorTwo' => 'D4A00F', 'colorThree' => '000000', 'colorFour' => 'FFFFFF',),
+		'Philadelphia Flyers' => array ('colorOne' => 'F4793E', 'colorTwo' => '000000', 'colorThree' => 'FFFFFF',),
+		'Pittsburgh Penguins' => array ('colorOne' => 'C5B358', 'colorTwo' => '000000', 'colorThree' => 'FFFFFF',),
+		'San Jose Sharks' => array ('colorOne' => '007889', 'colorTwo' => 'F4901E', 'colorThree' => '000000', 'colorFour' => 'FFFFFF',),
+		'St. Louis Blues' => array ('colorOne' => '00529C', 'colorTwo' => 'FDB930', 'colorThree' => '002D62', 'colorFour' => 'FFFFFF',),
+		'Tampa Bay Lightning' => array ('colorOne' => '003D7C', 'colorTwo' => '000000', 'colorThree' => 'FFFFFF',),
+		'Toronto Maple Leafs' => array ( 'colorOne' => '013E7F', 'colorTwo' => 'FFFFFF',),
+		'Vancouver Canucks' => array ('colorOne' => '003E7E', 'colorTwo' => '008852', 'colorThree' => 'ADAEB2', 'colorFour' => 'FFFFFF',),
+		'Washington Capitals' => array ('colorOne' => '002147', 'colorTwo' => 'C60C30', 'colorThree' => 'FFFFFF',),
+		'Winnipeg Jets' => array ('colorOne' => '002D62', 'colorTwo' => '006EC8', 'colorThree' => '8D8D8F', 'colorFour' => 'FFFFFF',)
+	); // COLORS ARRAY
+
+?>
